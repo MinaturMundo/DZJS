@@ -1,0 +1,120 @@
+
+.wrapper {
+   display: block;
+   position:absolute;
+   height: 100%;
+   left: 0;   
+   top: 0;
+}
+.wrapper.open-sidebar {
+   left: 240px;
+   z-index: 999;
+}
+
+.swipe-area {
+   position: absolute;
+   width: 0px;
+   left: 0;
+   top: 0;
+   height: 100%;
+   background: #f3f3f3;
+   z-index: 0;
+}
+#sidebar {
+   background: #fc0101;
+   position: absolute;
+   width: 240px;
+   height: 100%;
+   left: -240px;
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+}
+#sidebar ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+#sidebar ul li {
+   margin: 0;
+}
+#sidebar ul li a {
+   padding: 15px 20px;
+   font-size: 16px;
+   font-weight: 100;
+   color: rgb(0, 5, 1);
+   text-decoration: none;
+   display: block;
+   border-bottom: 1px solid #000000;
+   
+}
+#sidebar ul li:hover a {
+   background: #13c52b;
+}
+#slidebar-toggle{
+   z-index: 999;
+}
+.main-content {
+   width: 100%;
+   height: 100%;
+   padding: 10px;
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   position: relative;
+}
+.main-content .content{
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+padding-left: 60px;
+width: 100%;
+}
+.main-content .content h1{
+   font-weight: 100;
+}
+.main-content .content p{
+   width: 100%;
+   line-height: 160%;
+}
+.main-content #sidebar-toggle {
+   background: #13c52b;
+   border-radius: 3px;
+   display: block;
+   position: relative;
+   padding: 10px 7px;
+   float: left;
+}
+.main-content #sidebar-toggle .bar{
+   display: block;
+   width: 18px;
+   margin-bottom: 3px;
+   height: 2px;
+   background-color: rgb(255, 255, 255);
+   border-radius: 1px;   
+}
+.main-content #sidebar-toggle .bar:last-child{
+    margin-bottom: 0;   
+}
+
+
+* {
+   margin: 0;
+   /* font-family: Arial, Helvetica, sans-serif; */
+}
+.email, .login {
+   /* display: inline-block; */
+   margin-top: 10px;
+}
+#result,
+.my-form{
+   
+   display: none;
+   background-color: rgb(250, 193, 6);
+   width: 379px;
+   margin: 50px  auto;
+}
+#btn {
+   margin-top: 27px;
+   width: 380px;
+}
+.login {
+   margin-left: 20px;
+}

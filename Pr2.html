@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="StylePr2.css"/>
+        <link rel="stylesheet" href="Menu.css"/>
+        <link rel="stylesheet" href="Slider.css"/>
+        <link rel="stylesheet" href="Timer.css"/>
+        <link rel="stylesheet" href="Data.css"/>
+        <link rel="stylesheet" href="AJAX.css"/>
+        
+    </head>
+    <style>
+        .ball{
+            position: fixed;
+            background-image: url(png-clipart-christmas-ball-decoration-background-christmas-ball-christmas.png);
+            background-blend-mode: hue;
+            width: 70px;
+            height: 70px;
+            background-size: cover;
+            /* filter: saturate(0%) brightness(50%); */
+            transition-duration: .7s;
+            z-index: 999;
+        }
+        .ball.ball1{
+            top: 10%;
+            left: 70px;
+        }
+        .ball.ball2{
+            top: 10%;
+            right: 70px;
+        }
+        .ball.ball3{
+            top: 35%;
+            left: 70px;
+        }
+        .ball.ball4{
+            top: 35%;
+            right: 70px;
+        }
+        .ball.ball5{
+            top: 60%;
+            left: 70px;
+        }
+        .ball.ball6{
+            top: 60%;
+            right: 70px;
+        }
+    </style>
+    <body>
+        <div class="wrapper">
+            <div id="sidebar">
+                <ul>
+                    <li id="dof"><a href="#"><span>Login</span></a></li>
+                    <li><a href="Pr2.html">Главная</a></li>
+                    <li><a href="Rulette.html">Не нажимать</a></li>
+                    <li><a href="aj.html">Авторы и посты</a></li>
+                    <li><a href="Data.html">Когда же НГ?</a></li>
+                    <li id="fof"><a href="#"><span >Exit</span></a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <div class="swipe-area"></div>
+                <a href="#" data-toggle=".wrapper" id="sidebar-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </a>
+                <div class="content"></div>
+                
+            </div>
+        </div>
+
+
+    <form name="my" action="" id="forma" class="my-form">
+
+        <div class="email">
+            <label for="email">Your email:</label>
+           <p><input type="email" name="email" id="email" required></p>
+            <div class="pass">
+            <label for="password">Your password:</label>
+        <p><input type="password" name="pass" id="pass" required></p></div></div>
+        
+        <div class="login">
+            <label for="">Your login:</label>
+            <p><input type="login" name="login" id="login" required></p>
+                <div class="pass2">
+                <label for="password">Repeat password:</label>
+        <p><input type="password" name="pass2" id="pass2" required></p></div></div>
+        
+        <div>
+            <input type="submit" id="btn" value="Sign Up">
+        </div>
+        
+    </form>
+    <div id="result">Hello,</div>
+
+<!-- slider -->
+    <div class="container">
+        <div class="carousel">
+            <div class="carousel-window">
+                <div class="carousel-slides">
+                    <div class="carousel-item">
+                        <img src="img_mountains_wide.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img_nature_wide.jpg" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img_snow_wide.jpg" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <a href="#" class="carousel-prev">
+                <span class="carousel-prev-icon">&lt;</span>
+            </a>
+            <a href="#" class="carousel-next">
+                <span class="carousel-next-icon">&gt;</span>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <h1 class="countdown-title">New Year's through...</h1>
+    <div id="countdown" class="countdown">
+        <div class="countdown-number">
+            <span class="days countdown-time"></span>
+            <span class="countdown-text">Days</span>
+        </div>
+        <div class="countdown-number">
+            <span class="hours countdown-time"></span>
+            <span class="countdown-text">Hours</span>
+        </div>
+        <div class="countdown-number">
+            <span class="minutes countdown-time"></span>
+            <span class="countdown-text">Minutes</span>
+        </div>
+        <div class="countdown-number">
+            <span class="seconds countdown-time"></span>
+            <span class="countdown-text">Seconds</span>
+        </div>
+    </div>
+
+    <div class="calendar-wrapper">
+        <button id="btnPrev" type="button">P</button>
+        <button id="btnNext" type="button">N</button>
+        <div id="divCal"></div>
+    </div>
+
+
+
+
+
+    <div class="container">
+
+        <div class="ajax-request">
+            <div class="text-center">
+                <h3> </h3>
+            </div>
+            <!-- тут будет задача на аякс запрос -->
+
+            <div class = ajax-container id="ajax-container">                
+            <div id=all-Users></div>
+            <div id="resultAJ">
+                <table class="tbl">
+                    <tr>
+                        <td>Name:</td>
+                        <td id="nameN"></td>
+                    </tr>
+                    <tr>
+                        <td>Username:</td>
+                        <td id="usernameU"></td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td id="addressA"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td id="emailE"></td>
+                    </tr>
+                    <tr>
+                        <td>Phone:</td>
+                        <td id="phoneP"></td>
+                    </tr>
+                    <tr>
+                        <td>Website:</td>
+                        <td id="websiteW"></td>
+                    </tr>
+                </table>
+
+            </div>
+            <button id="postsbtn">Show</button>
+            <div id="posts"></div>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="ball ball1" style="display: none;"></div>
+    <div class="ball ball2" style="display: none;"></div>
+    <div class="ball ball3" style="display: none;"></div>
+    <div class="ball ball4" style="display: none;"></div>
+    <div class="ball ball5" style="display: none;"></div>
+    <div class="ball ball6" style="display: none;"></div>
+        <script src="scriptPr2.js"></script>
+    </body>
+</html>

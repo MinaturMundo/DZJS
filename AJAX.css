@@ -1,0 +1,42 @@
+#all-Users>div {
+    display:inline-flex;
+    flex-wrap: wrap;
+    width:250px;
+    margin:20px;
+    padding: 20px;
+    border:1px solid #eee;
+    color: black;
+    cursor: pointer;
+  
+  }
+  
+  
+  td,
+  tr {
+    border: 1px solid black;
+  }
+  
+  #postsbtn{
+    width: 1486px;
+    height: 100px;
+    font-size: large;
+  }
+  
+  #posts{
+    width: 1500px;
+  }
+  
+  
+  #posts>div{
+    display:inline-flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width:250px;
+    min-height: 260px;
+    margin:20px;
+    margin-left: 25px;
+    padding: 20px;
+    border:1px solid #eee;
+    color: black;
+  }
+  
